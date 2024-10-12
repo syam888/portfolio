@@ -1,71 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gana Syam Reddy Mandepudi - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gana Syam Reddy Mandepudi - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .container {
+            margin: 20px 0;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .timeline-item {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        .timeline-year {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .img-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .img-container img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .fadeIn {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            100% { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Gana Syam Reddy Mandepudi</h1>
-    <p>Data Engineer | Software Developer | Problem Solver</p>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="Gana_Syam_Reddy.pdf" download="Gana_Syam_Resume.pdf" class="btn">Download Resume</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Gana Syam Reddy Mandepudi</h1>
+        <p>Data Engineer | Software Developer | Problem Solver</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+            <a href="Gana_Syam_Reddy.pdf" class="button" download>Download Resume</a>
+        </nav>
+    </header>
 
-  <section id="about" class="fade-in">
-    <h2>About Me</h2>
-    <p>
-      I am a Master of Science student at the University at Buffalo (SUNY), specializing in Data Science with a GPA of 3.7.
-      I have expertise in Data Engineering, Software Development, and DevOps. My experience includes positions at Tata Consultancy Services 
-      and Fragma Data Systems, where I automated processes and handled large datasets using AWS, Azure, Jenkins, and Databricks.
-      Skilled in Python, C, MySQL, Spark, Kafka, TensorFlow, Keras, and more, I am passionate about building data-driven solutions and tackling complex problems.
-    </p>
-  </section>
+    <section id="about" class="fadeIn">
+        <h2>About Me</h2>
+        <div class="img-container">
+            <img src="images/my_image.jpg" alt="Profile Picture">
+        </div>
+        <p>
+            I am a Master of Science student at the University at Buffalo (SUNY), specializing in Data Science with a GPA of 3.7. I have expertise in Data Engineering, Software Development, and DevOps. My experience includes positions at Tata Consultancy Services and Fragma Data Systems, where I automated processes and handled large datasets using AWS, Azure, Jenkins, and Databricks. Skilled in Python, C, MySQL, Spark, Kafka, TensorFlow, Keras, and more, I am passionate about building data-driven solutions and tackling complex problems.
+        </p>
+    </section>
 
-  <section id="projects" class="fade-in">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="#">Real-Time Recommendation System</a> - Implemented using Kafka and Spark, simulating user interactions with the MovieLens dataset.</li>
-      <li><a href="#">NLP Sentiment Analysis Project</a> - Built an end-to-end sentiment analysis system for text classification and insights generation.</li>
-      <li><a href="#">Algorithm Tutorial Videos</a> - Educational videos on algorithm techniques like two-pointers, palindromes, and the 3sum problem.</li>
-      <li><a href="#">Bank Customer Churn Prediction</a> - Developed ML models to predict customer churn with a 71.14% accuracy, built a web app for real-time prediction.</li>
-      <li><a href="#">Retail Data Management System</a> - Created a SQL-based system to manage retail data with enhanced query performance and real-time dashboards.</li>
-      <li><a href="#">Handwritten Digit Classification</a> - Achieved 99.03% accuracy using a CNN to classify digits from the MNIST dataset.</li>
-    </ul>
-  </section>
+    <section id="projects" class="fadeIn">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <a href="#">Real-Time Recommendation System</a> – Implemented using Kafka and Spark, simulating user interactions with the MovieLens dataset.
+                <ul>
+                    <li>Streamlined data ingestion and processing for real-time recommendations.</li>
+                    <li>Deployed models for real-time prediction and personalized content recommendations.</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">NLP Sentiment Analysis Project</a> – Built an end-to-end sentiment analysis system for text classification and insights generation.
+                <ul>
+                    <li>Preprocessed raw text data and built models to classify sentiments accurately.</li>
+                    <li>Visualized sentiment trends in real-time dashboards using Tableau.</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Algorithm Tutorial Videos</a> – Educational videos on algorithm techniques like two-pointers, palindromes, and the 3sum problem.
+                <ul>
+                    <li>Designed engaging content to explain complex algorithms visually.</li>
+                    <li>Created step-by-step tutorials with real-world examples.</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Bank Customer Churn Prediction</a> – Developed ML models to predict customer churn with a 71.14% accuracy.
+                <ul>
+                    <li>Built a web app for real-time prediction and monitoring customer behavior.</li>
+                    <li>Integrated dashboards to visualize important churn factors and metrics.</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Retail Data Management System</a> – Created a SQL-based system to manage retail data with enhanced query performance and real-time dashboards.
+                <ul>
+                    <li>Optimized database queries to improve performance by 20%.</li>
+                    <li>Built real-time analytics to track key performance indicators for the business.</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Handwritten Digit Classification</a> – Achieved 99.03% accuracy using a CNN to classify digits from the MNIST dataset.
+                <ul>
+                    <li>Trained a convolutional neural network (CNN) on the MNIST dataset.</li>
+                    <li>Deployed the model on a web app for digit recognition.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
 
-  <section id="contact" class="fade-in">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> ganasyam@buffalo.edu</p>
-    <p><strong>Phone:</strong> +1 (716) 538-9352</p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/syam-reddy/" target="_blank">linkedin.com/in/syam-reddy</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/syam888" target="_blank">github.com/syam888</a></p>
-  </section>
+    <section id="experience" class="fadeIn">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">2022 - Present</div>
+                <div class="timeline-content">
+                    <h4>Fragma Data Systems</h4>
+                    <p>Data Engineer</p>
+                    <ul>
+                        <li>Automated data pipelines, leading to 15% increased data processing speed.</li>
+                        <li>Developed ETL jobs using Spark and optimized AWS Redshift queries.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2018 - 2021</div>
+                <div class="timeline-content">
+                    <h4>Tata Consultancy Services</h4>
+                    <p>Software Engineer</p>
+                    <ul>
+                        <li>Implemented scalable solutions for managing large datasets.</li>
+                        <li>Collaborated on cloud projects, using AWS, Jenkins, and Docker.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2024 Gana Syam Reddy Mandepudi</p>
-  </footer>
+    <section id="education" class="fadeIn">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">2022 - 2024</div>
+                <div class="timeline-content">
+                    <h4>University at Buffalo (SUNY)</h4>
+                    <p>M.S. in Data Science, GPA: 3.7</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2014 - 2018</div>
+                <div class="timeline-content">
+                    <h4>Jawaharlal Nehru Technological University</h4>
+                    <p>B.Tech in Computer Science</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script>
-    window.addEventListener('scroll', function() {
-      const elements = document.querySelectorAll('.fade-in');
-      elements.forEach((el) => {
-        const position = el.getBoundingClientRect().top;
-        const screenPosition = window.innerHeight / 1.3;
-        if (position < screenPosition) {
-          el.classList.add('active');
-        }
-      });
-    });
-  </script>
+    <section id="contact" class="fadeIn">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:ganasyamreddy@example.com">ganasyamreddy@example.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gana Syam Reddy Mandepudi</p>
+    </footer>
 </body>
 </html>
