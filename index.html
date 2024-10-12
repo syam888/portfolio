@@ -47,7 +47,7 @@
             z-index: -1;
         }
 
-        /* Section break styles */
+        /* Section break styles with a gap for icons/emoji */
         .section-break {
             display: flex;
             align-items: center;
@@ -59,20 +59,17 @@
         .section-break::before {
             content: '';
             position: absolute;
-            left: -80px; /* Positioning the break point near the line */
-            width: 20px;
-            height: 20px;
-            background: #24292e; /* Same color as background to break the line */
-            border-radius: 50%; /* Circular shape */
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+            left: -100px; /* Position the break point on the vertical line */
+            width: 60px; /* Create a gap for the icon */
+            height: 4px; /* This creates a break in the vertical line */
+            background-color: #0d1117; /* Same color as background to hide the line */
         }
 
-        /* Emoji or Icon within the break */
         .section-break .emoji {
             position: absolute;
-            left: -75px;
-            top: -5px;
-            font-size: 1.5em;
+            left: -80px;
+            top: 0;
+            font-size: 2em;
         }
 
         /* Section styling for Experience and Education */
@@ -143,6 +140,7 @@
                 <h2 class="section-title">Experience</h2>
             </div>
             <p>Tata Consultancy Services - Data Engineer...</p>
+            <p>University of Buffalo - M.S. in Data Science...</p>
         </section>
 
         <!-- Education Section -->
@@ -152,6 +150,7 @@
                 <h2 class="section-title">Education</h2>
             </div>
             <p>University at Buffalo - M.S. in Data Science...</p>
+            <p>Relevant Coursework: Machine Learning, Data Mining...</p>
         </section>
     </div>
 
