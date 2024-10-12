@@ -49,6 +49,7 @@
 
         .content {
             padding: 50px;
+            margin-left: 80px; /* Move content to the right */
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transitions */
@@ -108,6 +109,24 @@
         .button:hover {
             background: #218838; /* Button hover color */
         }
+
+        /* Section heading with line break */
+        .section-heading {
+            position: relative;
+            padding-left: 20px;
+            margin-top: 40px;
+        }
+
+        .section-heading:before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #ff4081, #4a90e2);
+            z-index: -1; /* Place behind the text */
+        }
     </style>
 </head>
 
@@ -119,6 +138,8 @@
         <nav>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
             <a href="#contact">Contact</a>
             <a href="path/to/your_resume.pdf" class="button" download>Download Resume</a>
         </nav>
@@ -164,6 +185,24 @@
             <p>Achieved 99.03% accuracy using a CNN to classify digits from the MNIST dataset.</p>
             <p>Explored different architectures to optimize model accuracy.</p>
         </div>
+    </section>
+
+    <section id="experience" class="content">
+        <h2 class="section-heading">Experience</h2>
+        <div class="year">2024</div>
+        <p>Graduated with a Master's in Data Science from the University at Buffalo.</p>
+        <div class="year">2023</div>
+        <p>Interned at Tata Consultancy Services, automating data processing tasks.</p>
+        <div class="year">2022</div>
+        <p>Worked on various data science projects focusing on real-time data processing.</p>
+    </section>
+
+    <section id="education" class="content">
+        <h2 class="section-heading">Education</h2>
+        <div class="year">2024</div>
+        <p>Master's in Data Science, University at Buffalo.</p>
+        <div class="year">2022</div>
+        <p>Bachelor's in Computer Science, XYZ University.</p>
     </section>
 
     <section id="contact" class="content">
