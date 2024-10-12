@@ -10,13 +10,12 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #282c34; /* Dark background */
-            color: #f6f8fa; /* Light text color for contrast */
-            position: relative;
+            background-color: #0d1117;
+            color: #f6f8fa;
         }
 
         header {
-            background: #24292e; /* Dark header */
+            background: #24292e;
             color: white;
             padding: 20px;
             text-align: center;
@@ -37,110 +36,76 @@
             margin: 0;
         }
 
-        /* Vertical Line Styles */
-        .sidebar {
-            position: fixed;
+        /* Vertical Line with Gradient */
+        .vertical-line {
+            position: absolute;
             top: 0;
-            left: 60px; /* Move it 60px from the left */
-            width: 5px;
-            height: 100%;
-            background: linear-gradient(to bottom, #ff4081, #4a90e2); /* Vibrant gradient */
+            bottom: 0;
+            left: 50px; /* Adjust this value to move the line */
+            width: 4px;
+            background: linear-gradient(to bottom, #3b82f6, #10b981); /* Vibrant gradient */
+            z-index: -1;
         }
 
+        /* Section break styles */
+        .section-break {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-left: 80px; /* Adjust based on the line position */
+            padding: 20px 0;
+        }
+
+        .section-break::before {
+            content: '';
+            position: absolute;
+            left: -80px; /* Positioning the break point near the line */
+            width: 20px;
+            height: 20px;
+            background: #24292e; /* Same color as background to break the line */
+            border-radius: 50%; /* Circular shape */
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Emoji or Icon within the break */
+        .section-break .emoji {
+            position: absolute;
+            left: -75px;
+            top: -5px;
+            font-size: 1.5em;
+        }
+
+        /* Section styling for Experience and Education */
+        .section-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* Pop-up animation */
         .content {
-            padding: 50px;
-            margin-left: 80px; /* Move content to the right */
             opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transitions */
+            transform: translateY(30px);
+            transition: opacity 1s ease, transform 1s ease;
         }
 
-        .visible {
+        .content.show {
             opacity: 1;
             transform: translateY(0);
         }
 
-        .fade-out {
-            opacity: 0;
-            transform: translateY(20px);
+        /* Animation on scroll */
+        .scroll-container {
+            margin-left: 100px; /* Align the content away from the line */
         }
 
-        .img-container {
-            text-align: center;
+        .scroll-container p {
             margin: 20px 0;
-        }
-
-        img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #24292e; /* Dark footer */
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .project {
-            margin: 20px 0;
-        }
-
-        .year {
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        .button {
-            display: inline-block;
-            margin: 10px 0;
-            padding: 10px 20px;
-            background: #28a745; /* Button color */
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .button:hover {
-            background: #218838; /* Button hover color */
-        }
-
-        /* Section heading with line break and emoji */
-        .section-heading {
-            position: relative;
-            padding-left: 30px; /* Create space for the emoji */
-            margin-top: 40px;
-            margin-bottom: 20px; /* Space below the heading */
-        }
-
-        .section-heading:before {
-            content: '';
-            position: absolute;
-            left: -10px; /* Adjust position to the left of the heading */
-            top: 50%;
-            width: 5px;
-            height: calc(100% + 20px); /* Adjust height to ensure it looks continuous */
-            background: linear-gradient(to bottom, #ff4081, #4a90e2);
-            z-index: -1; /* Place behind the text */
-        }
-
-        /* Add emoji for headings */
-        .emoji {
-            position: absolute;
-            left: -35px; /* Adjust position */
-            top: 0;
-            font-size: 24px; /* Size of the emoji */
         }
     </style>
 </head>
 
 <body>
-    <div class="sidebar"></div>
 
     <header>
         <h1>Gana Syam Reddy Mandepudi</h1>
@@ -149,103 +114,67 @@
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
             <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-            <a href="path/to/your_resume.pdf" class="button" download>Download Resume</a>
+            <a href="Gana_Syam.pdf" download>Download Resume</a>
         </nav>
     </header>
 
-    <section id="about" class="content">
-        <h2>About Me</h2>
-        <div class="img-container">
-            <img src="images/my_image.JPG" alt="Profile Picture">
-        </div>
-        <p>I am a Master's student at the University at Buffalo (SUNY), specializing in Data Science with a GPA of 3.7. I have expertise in Data Engineering, Software Development, and DevOps. My experience includes positions at Tata Consultancy Services and Fragma Data Systems, where I automated processes and handled large datasets using AWS, Azure, Jenkins, and Databricks. Skilled in Python, C, MySQL, Spark, Kafka, TensorFlow, Keras, and more, I am passionate about building data-driven solutions and tackling complex problems.</p>
-    </section>
+    <div class="vertical-line"></div>
 
-    <section id="projects" class="content">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Real-Time Recommendation System</h3>
-            <p>Implemented using Kafka and Spark, simulating user interactions with the MovieLens dataset.</p>
-            <p>Utilized machine learning algorithms to enhance recommendation accuracy.</p>
-        </div>
-        <div class="project">
-            <h3>NLP Sentiment Analysis Project</h3>
-            <p>Built an end-to-end sentiment analysis system for text classification and insights generation.</p>
-            <p>Leveraged natural language processing techniques to analyze user feedback.</p>
-        </div>
-        <div class="project">
-            <h3>Algorithm Tutorial Videos</h3>
-            <p>Created educational videos on algorithm techniques like two-pointers, palindromes, and the 3sum problem.</p>
-            <p>Focused on enhancing understanding of fundamental concepts through visual learning.</p>
-        </div>
-        <div class="project">
-            <h3>Bank Customer Churn Prediction</h3>
-            <p>Developed ML models to predict customer churn with a 71.14% accuracy, built a web app for real-time prediction.</p>
-            <p>Implemented data preprocessing and feature engineering to improve model performance.</p>
-        </div>
-        <div class="project">
-            <h3>Retail Data Management System</h3>
-            <p>Created a SQL-based system to manage retail data with enhanced query performance and real-time dashboards.</p>
-            <p>Designed an intuitive user interface for efficient data retrieval and visualization.</p>
-        </div>
-        <div class="project">
-            <h3>Handwritten Digit Classification</h3>
-            <p>Achieved 99.03% accuracy using a CNN to classify digits from the MNIST dataset.</p>
-            <p>Explored different architectures to optimize model accuracy.</p>
-        </div>
-    </section>
+    <div class="scroll-container">
+        <!-- About Section -->
+        <section id="about" class="content">
+            <h2>About Me</h2>
+            <p>I am a Master of Science student at the University of Buffalo (SUNY)...</p>
+        </section>
 
-    <section id="experience" class="content">
-        <h2 class="section-heading">Experience <span class="emoji">💼</span></h2>
-        <div class="year">2024</div>
-        <p>Graduated with a Master's in Data Science from the University at Buffalo.</p>
-        <div class="year">2023</div>
-        <p>Interned at Tata Consultancy Services, automating data processing tasks.</p>
-        <div class="year">2022</div>
-        <p>Worked on various data science projects focusing on real-time data processing.</p>
-    </section>
+        <!-- Projects Section -->
+        <section id="projects" class="content">
+            <h2>Projects</h2>
+            <ul>
+                <li>Real-Time Recommendation System - Implemented using Kafka and Spark...</li>
+                <!-- More projects -->
+            </ul>
+        </section>
 
-    <section id="education" class="content">
-        <h2 class="section-heading">Education <span class="emoji">🎓</span></h2>
-        <div class="year">2024</div>
-        <p>Master's in Data Science, University at Buffalo.</p>
-        <div class="year">2022</div>
-        <p>Bachelor's in Computer Science, XYZ University.</p>
-    </section>
+        <!-- Experience Section -->
+        <section id="experience" class="content">
+            <div class="section-break">
+                <span class="emoji">💼</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <p>Tata Consultancy Services - Data Engineer...</p>
+        </section>
 
-    <section id="contact" class="content">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Gana Syam Reddy Mandepudi</p>
-    </footer>
+        <!-- Education Section -->
+        <section id="education" class="content">
+            <div class="section-break">
+                <span class="emoji">🎓</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <p>University at Buffalo - M.S. in Data Science...</p>
+        </section>
+    </div>
 
     <script>
-        let lastScrollTop = 0;
+        // Function to show content on scroll
+        const contents = document.querySelectorAll('.content');
 
-        document.addEventListener('scroll', function () {
-            const sections = document.querySelectorAll('section');
-            const currentScroll = window.scrollY;
-
-            sections.forEach(section => {
-                const sectionTop = section.getBoundingClientRect().top;
+        function revealOnScroll() {
+            contents.forEach((content) => {
+                const contentTop = content.getBoundingClientRect().top;
                 const windowHeight = window.innerHeight;
 
-                if (sectionTop < windowHeight - 50) {
-                    section.classList.add('visible');
-                    section.classList.remove('fade-out');
-                } else if (currentScroll < lastScrollTop) { // Scrolling up
-                    section.classList.add('fade-out');
-                    section.classList.remove('visible');
+                if (contentTop < windowHeight - 100) {
+                    content.classList.add('show');
+                } else {
+                    content.classList.remove('show');
                 }
             });
+        }
 
-            lastScrollTop = currentScroll;
-        });
+        window.addEventListener('scroll', revealOnScroll);
     </script>
+
 </body>
 
 </html>
