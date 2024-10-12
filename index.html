@@ -10,8 +10,9 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #181818; /* Dark background */
+            background-color: #282c34; /* Dark background */
             color: #f6f8fa; /* Light text color for contrast */
+            position: relative;
         }
 
         header {
@@ -36,16 +37,31 @@
             margin: 0;
         }
 
-        section {
+        /* Vertical Line Styles */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #ff4081, #4a90e2); /* Vibrant gradient */
+        }
+
+        .content {
             padding: 50px;
             opacity: 0;
             transform: translateY(20px);
-            transition: opacity 0.8s ease, transform 0.8s ease; /* Increased delay time */
+            transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transitions */
         }
 
         .visible {
             opacity: 1;
             transform: translateY(0);
+        }
+
+        .fade-out {
+            opacity: 0;
+            transform: translateY(20px);
         }
 
         .img-container {
@@ -74,6 +90,11 @@
             margin: 20px 0;
         }
 
+        .year {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
         .button {
             display: inline-block;
             margin: 10px 0;
@@ -91,6 +112,8 @@
 </head>
 
 <body>
+    <div class="sidebar"></div>
+
     <header>
         <h1>Gana Syam Reddy Mandepudi</h1>
         <nav>
@@ -143,6 +166,24 @@
         </div>
     </section>
 
+    <section id="experience" class="content">
+        <h2>Experience</h2>
+        <div class="year">2024</div>
+        <p>Graduated with a Master's in Data Science from the University at Buffalo.</p>
+        <div class="year">2023</div>
+        <p>Interned at Tata Consultancy Services, automating data processing tasks.</p>
+        <div class="year">2022</div>
+        <p>Worked on various data science projects focusing on real-time data processing.</p>
+    </section>
+
+    <section id="education" class="content">
+        <h2>Education</h2>
+        <div class="year">2024</div>
+        <p>Master's in Data Science, University at Buffalo.</p>
+        <div class="year">2022</div>
+        <p>Bachelor's in Computer Science, XYZ University.</p>
+    </section>
+
     <section id="contact" class="content">
         <h2>Contact</h2>
         <p>Email: your.email@example.com</p>
@@ -153,16 +194,26 @@
     </footer>
 
     <script>
+        let lastScrollTop = 0;
+
         document.addEventListener('scroll', function () {
             const sections = document.querySelectorAll('section');
+            const currentScroll = window.scrollY;
+
             sections.forEach(section => {
                 const sectionTop = section.getBoundingClientRect().top;
                 const windowHeight = window.innerHeight;
 
                 if (sectionTop < windowHeight - 50) {
                     section.classList.add('visible');
+                    section.classList.remove('fade-out');
+                } else if (currentScroll < lastScrollTop) { // Scrolling up
+                    section.classList.add('fade-out');
+                    section.classList.remove('visible');
                 }
             });
+
+            lastScrollTop = currentScroll;
         });
     </script>
 </body>
