@@ -110,7 +110,7 @@
             background: #218838; /* Button hover color */
         }
 
-        /* Section heading with line break */
+        /* Section heading with line break and emoji */
         .section-heading {
             position: relative;
             padding-left: 20px;
@@ -123,9 +123,17 @@
             left: -10px;
             top: 50%;
             width: 5px;
-            height: 100%;
+            height: calc(100% - 20px); /* Adjust height */
             background: linear-gradient(to bottom, #ff4081, #4a90e2);
             z-index: -1; /* Place behind the text */
+        }
+
+        /* Add emoji for headings */
+        .emoji {
+            position: absolute;
+            left: -35px; /* Adjust position */
+            top: 0;
+            font-size: 24px; /* Size of the emoji */
         }
     </style>
 </head>
@@ -188,7 +196,7 @@
     </section>
 
     <section id="experience" class="content">
-        <h2 class="section-heading">Experience</h2>
+        <h2 class="section-heading">Experience <span class="emoji">💼</span></h2>
         <div class="year">2024</div>
         <p>Graduated with a Master's in Data Science from the University at Buffalo.</p>
         <div class="year">2023</div>
@@ -198,7 +206,7 @@
     </section>
 
     <section id="education" class="content">
-        <h2 class="section-heading">Education</h2>
+        <h2 class="section-heading">Education <span class="emoji">🎓</span></h2>
         <div class="year">2024</div>
         <p>Master's in Data Science, University at Buffalo.</p>
         <div class="year">2022</div>
