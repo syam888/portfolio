@@ -1,181 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gana Syam Reddy Mandepudi - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gana Syam Reddy Mandepudi | Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f6f8fa;
             color: #333;
         }
+
         header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        section {
+            background: #24292e;
+            color: white;
             padding: 20px;
-            margin: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
-        h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
         }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        section {
+            padding: 50px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
         .img-container {
             text-align: center;
             margin: 20px 0;
         }
-        .img-container img {
+
+        img {
             width: 150px;
-            height: auto;
+            height: 150px;
             border-radius: 50%;
+            object-fit: cover;
         }
+
         footer {
             text-align: center;
-            padding: 10px 0;
-            background: #333;
-            color: #fff;
+            padding: 20px;
+            background: #24292e;
+            color: white;
             position: relative;
             bottom: 0;
             width: 100%;
         }
-        .project-list {
-            list-style-type: none;
-            padding: 0;
+
+        .project {
+            margin: 20px 0;
         }
-        .project-list li {
+
+        .button {
+            display: inline-block;
             margin: 10px 0;
-        }
-        .timeline {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .timeline div {
-            margin: 10px 0;
-            padding: 10px;
-            background: #f4f4f4;
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
             border-radius: 5px;
-            width: 80%;
+        }
+
+        .button:hover {
+            background: #218838;
         }
     </style>
 </head>
+
 <body>
+    <header>
+        <h1>Gana Syam Reddy Mandepudi</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="path/to/your_resume.pdf" class="button" download>Download Resume</a>
+        </nav>
+    </header>
 
-<header>
-    <h1>Gana Syam Reddy Mandepudi</h1>
-    <h2>Data Engineer | Software Developer | Problem Solver</h2>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-        <a href="Gana_Syam.pdf" download>Download Resume</a>
-    </nav>
-</header>
+    <section id="about" class="content">
+        <h2>About Me</h2>
+        <div class="img-container">
+            <img src="images/my_image.JPG" alt="Profile Picture">
+        </div>
+        <p>I am a Master's student at the University at Buffalo (SUNY), specializing in Data Science with a GPA of 3.7. I have expertise in Data Engineering, Software Development, and DevOps. My experience includes positions at Tata Consultancy Services and Fragma Data Systems, where I automated processes and handled large datasets using AWS, Azure, Jenkins, and Databricks. Skilled in Python, C, MySQL, Spark, Kafka, TensorFlow, Keras, and more, I am passionate about building data-driven solutions and tackling complex problems.</p>
+    </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <div class="img-container">
-        <img src="images/my_image.JPG" alt="Profile Picture">
-    </div>
-    <p>I am a Master's student at the University at Buffalo (SUNY), specializing in Data Science with a GPA of 3.7. I have expertise in Data Engineering, Software Development, and DevOps. My experience includes positions at Tata Consultancy Services and Fragma Data Systems, where I automated processes and handled large datasets using AWS, Azure, Jenkins, and Databricks. Skilled in Python, C, MySQL, Spark, Kafka, TensorFlow, Keras, and more, I am passionate about building data-driven solutions and tackling complex problems.</p>
-</section>
+    <section id="projects" class="content">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Real-Time Recommendation System</h3>
+            <p>Implemented using Kafka and Spark, simulating user interactions with the MovieLens dataset.</p>
+            <p>Utilized machine learning algorithms to enhance recommendation accuracy.</p>
+        </div>
+        <div class="project">
+            <h3>NLP Sentiment Analysis Project</h3>
+            <p>Built an end-to-end sentiment analysis system for text classification and insights generation.</p>
+            <p>Leveraged natural language processing techniques to analyze user feedback.</p>
+        </div>
+        <div class="project">
+            <h3>Algorithm Tutorial Videos</h3>
+            <p>Created educational videos on algorithm techniques like two-pointers, palindromes, and the 3sum problem.</p>
+            <p>Focused on enhancing understanding of fundamental concepts through visual learning.</p>
+        </div>
+        <div class="project">
+            <h3>Bank Customer Churn Prediction</h3>
+            <p>Developed ML models to predict customer churn with a 71.14% accuracy, built a web app for real-time prediction.</p>
+            <p>Implemented data preprocessing and feature engineering to improve model performance.</p>
+        </div>
+        <div class="project">
+            <h3>Retail Data Management System</h3>
+            <p>Created a SQL-based system to manage retail data with enhanced query performance and real-time dashboards.</p>
+            <p>Designed an intuitive user interface for efficient data retrieval and visualization.</p>
+        </div>
+        <div class="project">
+            <h3>Handwritten Digit Classification</h3>
+            <p>Achieved 99.03% accuracy using a CNN to classify digits from the MNIST dataset.</p>
+            <p>Explored different architectures to optimize model accuracy.</p>
+        </div>
+    </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <ul class="project-list">
-        <li>
-            <strong>Real-Time Recommendation System</strong> - Implemented using Kafka and Spark.
-            <ul>
-                <li>Simulated user interactions with the MovieLens dataset to provide personalized recommendations.</li>
-                <li>Utilized Spark Streaming for real-time data processing and analytics.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>NLP Sentiment Analysis Project</strong> - Built an end-to-end sentiment analysis system.
-            <ul>
-                <li>Developed for text classification and insights generation.</li>
-                <li>Used advanced NLP techniques and machine learning algorithms to analyze user sentiments.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Algorithm Tutorial Videos</strong> - Educational videos on algorithm techniques.
-            <ul>
-                <li>Covered topics like two-pointers, palindromes, and the 3sum problem.</li>
-                <li>Focused on clear explanations and practical coding examples.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Bank Customer Churn Prediction</strong> - Developed ML models for prediction.
-            <ul>
-                <li>Achieved a 71.14% accuracy and built a web app for real-time prediction.</li>
-                <li>Utilized various machine learning techniques and data preprocessing methods.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Retail Data Management System</strong> - Created a SQL-based system for retail data management.
-            <ul>
-                <li>Enhanced query performance and developed real-time dashboards.</li>
-                <li>Implemented data integrity and security measures to protect sensitive information.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Handwritten Digit Classification</strong> - Achieved 99.03% accuracy using CNN.
-            <ul>
-                <li>Classified digits from the MNIST dataset effectively.</li>
-                <li>Optimized model performance using hyperparameter tuning and regularization techniques.</li>
-            </ul>
-        </li>
-    </ul>
-</section>
+    <section id="contact" class="content">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+    </section>
 
-<section id="experience">
-    <h2>Experience</h2>
-    <div class="timeline">
-        <div><strong>Tata Consultancy Services</strong> - DevOps Engineer (July 2021 - July 2023)</div>
-        <div><strong>Fragma Data Systems</strong> - Data Analyst ( June 2020 - June 2021)</div>
-    </div>
-</section>
+    <footer>
+        <p>&copy; 2024 Gana Syam Reddy Mandepudi</p>
+    </footer>
 
-<section id="education">
-    <h2>Education</h2>
-    <div class="timeline">
-        <div><strong>University at Buffalo (SUNY)</strong> - Master of Science in Data Science (August 2023 - December 2024)</div>
-        <div><strong>Vignan University</strong> - Bachelor of Technology in Electronics and Communication Engineering (June 2017 - June 2021)</div>
-    </div>
-</section>
+    <script>
+        document.addEventListener('scroll', function () {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: ganasyam@buffalo.edu</p>
-</section>
-
-<footer>
-    <p>&copy; 2024 Gana Syam Reddy Mandepudi</p>
-</footer>
-
+                if (sectionTop < windowHeight - 50) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>
