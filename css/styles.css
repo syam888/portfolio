@@ -252,8 +252,7 @@ footer {
   height: 100vh;
   min-height: 500px;
   max-height: 1080px;
-  background: url(../images/lead-bg.jpg);
-  background-size: cover;
+  background: url(../images/background_image-1.jpg) no-repeat center center/cover;
   padding: 15px;
   overflow: hidden;
 }
@@ -282,7 +281,7 @@ footer {
 }
 
 #lead-content h2 {
-  color: #a0cfee;
+  color: #33373a;
   font-weight: 500;
   font-size: 2.25em;
   margin-bottom: 15px;
@@ -296,7 +295,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(33, 125, 187, 0.8);
+  background: rgba(50, 53, 55, 0.8);
   z-index: 1;
 }
 
