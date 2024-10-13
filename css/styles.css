@@ -387,12 +387,16 @@ footer {
   content: '';
   width: 3px;
   height: 40px;
-  background: #3498db;
-  background: linear-gradient(to bottom, #3498db, rgba(52, 152, 219, 0));
+  background: #222426;
+  background: linear-gradient(to bottom, #212323, rgba(52, 152, 219, 0));
   top: 100%;
   left: 303px;
 }
 
+ul {
+  color: #1a1f22; /* Light black color for bullet points */
+  margin-left: 20px; /* Optional: Indent the bullet points */
+}
 .vtimeline-content {
   margin-left: 350px;
   background: #fff;
