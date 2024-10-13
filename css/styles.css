@@ -1,6 +1,8 @@
 body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
+  background-color: #000; /* Classic black background for the whole site */
+  color: #1a1f22; /* Default text color */
 }
 
 body.active {
@@ -39,6 +41,11 @@ body.active {
 .no-js #experience-timeline:before,
 .no-js #experience-timeline:after {
   content: none;
+}
+
+ul {
+  color: #1a1f22; /* Light black color for bullet points */
+  margin-left: 20px; /* Optional: Indent the bullet points */
 }
 
 @keyframes dropHeader {
@@ -252,7 +259,7 @@ footer {
   height: 100vh;
   min-height: 500px;
   max-height: 1080px;
-  background: url(../images/background_image-1.jpg) no-repeat center center/cover;
+  background: url(../images/background_image-1.jpg) no-repeat center center/cover; /* Updated background image */
   padding: 15px;
   overflow: hidden;
 }
@@ -281,7 +288,7 @@ footer {
 }
 
 #lead-content h2 {
-  color: #33373a;
+  color: #a0cfee;
   font-weight: 500;
   font-size: 2.25em;
   margin-bottom: 15px;
@@ -295,7 +302,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(50, 53, 55, 0.8);
+  background: rgba(33, 125, 187, 0.8);
   z-index: 1;
 }
 
@@ -387,16 +394,12 @@ footer {
   content: '';
   width: 3px;
   height: 40px;
-  background: #222426;
-  background: linear-gradient(to bottom, #212323, rgba(52, 152, 219, 0));
+  background: #3498db;
+  background: linear-gradient(to bottom, #3498db, rgba(52, 152, 219, 0));
   top: 100%;
   left: 303px;
 }
 
-ul {
-  color: #1a1f22; /* Light black color for bullet points */
-  margin-left: 20px; /* Optional: Indent the bullet points */
-}
 .vtimeline-content {
   margin-left: 350px;
   background: #fff;
@@ -409,7 +412,7 @@ ul {
 .vtimeline-content h3 {
   font-size: 1.5em;
   font-weight: 300;
-  color: #43474f;
+  color: #374054;
   display: inline-block;
   margin: 0;
 }
@@ -439,7 +442,7 @@ ul {
   color: #fff;
   width: 50px;
   height: 50px;
-  background: #1c1c1d;
+  background: #3498db;
   border-radius: 50%;
   float: left;
   z-index: 99;
@@ -593,7 +596,7 @@ ul {
 
 #contact {
   padding: 50px 15px;
-  background: #2c2e2f;
+  background: #3498db;
   text-align: center;
 }
 
@@ -616,7 +619,7 @@ ul {
   border-radius: 4px;
   border: none;
   margin-bottom: 10px;
-  background: #262728;
+  background: #1d6fa5;
   color: #fff;
   transition: .5s ease all;
 }
@@ -646,7 +649,7 @@ ul {
 #contact-form input:focus,
 #contact-form textarea:focus {
   outline: none;
-  background: #202122;
+  background: #16527a;
 }
 
 #contact-form textarea {
@@ -661,7 +664,7 @@ ul {
   border-radius: 4px;
   padding: 5px 10px;
   border: none;
-  color: #1d1e20;
+  color: #3498db;
   font-weight: 700;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: .5s ease all;
@@ -678,7 +681,7 @@ ul {
 }
 
 .optional-section h2 {
-  color: #1e1f22;
+  color: #374054;
 }
 
 .optional-section-block {
