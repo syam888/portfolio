@@ -18,7 +18,7 @@ body.active {
 .no-js #experience-timeline > div h3 {
   font-size: 1.5em;
   font-weight: 300;
-  color: #374054;
+  color: #313234;
   display: inline-block;
   margin: 0;
 }
@@ -26,12 +26,12 @@ body.active {
 .no-js #experience-timeline > div h4 {
   font-size: 1.2em;
   font-weight: 300;
-  color: #7e8890;
+  color: #313a42;
   margin: 0 0 15px 0;
 }
 
 .no-js #experience-timeline > div p {
-  color: #74808a;
+  color: #1a1f22;
   font-size: 0.9em;
   margin: 0;
 }
@@ -79,19 +79,19 @@ header li {
 
 header a {
   display: block;
-  color: #3498db;
+  color: #282b2d;
   padding: 10px;
 }
 
 header a:hover {
-  color: #217dbb;
+  color: #202324;
   text-decoration: none;
   background: #eee;
   border-radius: 4px;
 }
 
 header a:focus {
-  color: #3498db;
+  color: #2f3133;
   text-decoration: none;
 }
 
@@ -114,7 +114,7 @@ header.sticky {
   position: fixed;
   right: 15px;
   top: 10px;
-  color: #3498db;
+  color: #1a1f22;
   font-size: 1.5em;
   z-index: 20;
   padding: 0 7px;
