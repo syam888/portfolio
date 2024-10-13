@@ -18,7 +18,7 @@ body.active {
 .no-js #experience-timeline > div h3 {
   font-size: 1.5em;
   font-weight: 300;
-  color: #1a1f22; /* Light black */
+  color: #3c3f40; /* Light black */
   display: inline-block;
   margin: 0;
 }
@@ -26,12 +26,12 @@ body.active {
 .no-js #experience-timeline > div h4 {
   font-size: 1.2em;
   font-weight: 300;
-  color: #1a1f22; /* Light black */
+  color: #3c3f40; /* Light black */
   margin: 0 0 15px 0;
 }
 
 .no-js #experience-timeline > div p {
-  color: #1a1f22; /* Light black */
+  color: #242728; /* Light black */
   font-size: 0.9em;
   margin: 0;
 }
@@ -79,7 +79,7 @@ header li {
 
 header a {
   display: block;
-  color: #1a1f22; /* Light black */
+  color: #202223; /* Light black */
   padding: 10px;
 }
 
@@ -91,7 +91,7 @@ header a:hover {
 }
 
 header a:focus {
-  color: #1a1f22; /* Light black */
+  color: #292c2e; /* Light black */
   text-decoration: none;
 }
 
@@ -114,7 +114,7 @@ header.sticky {
   position: fixed;
   right: 15px;
   top: 10px;
-  color: #1a1f22; /* Light black */
+  color: #252729; /* Light black */
   font-size: 1.5em;
   z-index: 20;
   padding: 0 7px;
@@ -131,7 +131,7 @@ header.sticky {
   padding-right: 15px;
   padding-top: 10px;
   cursor: pointer;
-  color: #1a1f22; /* Light black */
+  color: #242729; /* Light black */
 }
 
 #mobile-menu-close span {
@@ -153,7 +153,7 @@ footer {
 
 .copyright p {
   margin: 0;
-  color: #1a1f22; /* Light black */
+  color: #232628; /* Light black */
 }
 
 .top {
@@ -197,7 +197,7 @@ footer {
 }
 
 .social a:hover {
-  color: #3498db; /* Blue */
+  color: #333334; /* Blue */
 }
 
 .btn-rounded-white {
@@ -295,7 +295,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(33, 125, 187, 0.8);
+  background: rgba(66, 66, 67, 0.8);
   z-index: 1;
 }
 
@@ -317,7 +317,7 @@ footer {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  border: 3px solid #a0cfee;
+  border: 3px solid #424344;
   text-align: center;
 }
 
@@ -594,7 +594,7 @@ ul {
 
 #contact {
   padding: 50px 15px;
-  background: #3498db; /* Change to white later */
+  background: #535455; /* Change to white later */
   text-align: center;
 }
 
@@ -617,7 +617,7 @@ ul {
   border-radius: 4px;
   border: none;
   margin-bottom: 10px;
-  background: #1d6fa5; /* Change to white later */
+  background: #414242; /* Change to white later */
   color: #fff; /* Change to white */
   transition: .5s ease all;
 }
@@ -647,7 +647,7 @@ ul {
 #contact-form input:focus,
 #contact-form textarea:focus {
   outline: none;
-  background: #16527a; /* Change to white later */
+  background: #3c3c3d; /* Change to white later */
 }
 
 #contact-form textarea {
