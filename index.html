@@ -1,232 +1,91 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gana Syam Reddy Mandepudi's Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gana Syam Reddy - Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-
-    <header class="bg-light shadow-sm">
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <ul id="menu" class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <div id="lead" class="d-flex align-items-center justify-content-center text-center" style="height: 100vh;">
-        <div id="lead-content">
-            <h1 class="text-white">Gana Syam Reddy Mandepudi</h1>
-            <span id="typed-animation" class="text-light"></span>
-            <a href="projects/Gana_Syam_Reddy.pdf" class="btn btn-light btn-rounded" target="_blank" download>Download Resume</a>
-        </div>
-        <div id="lead-overlay"></div>
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-    </div>
+    <main>
+        <section id="home">
+            <h1 class="animate-text">Your Name</h1>
+            <p class="animate-text">Software Developer | Problem Solver | Innovator</p>
+        </section>
 
-    <div id="about" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
+        <section id="about">
+            <h2 class="animate-text">About Me</h2>
+            <p class="animate-text">A passionate software developer with a keen interest in creating efficient and scalable solutions. I thrive on challenges and continuously strive to expand my skill set.</p>
+        </section>
+
+        <section id="projects">
+            <h2 class="animate-text">My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1</p>
                 </div>
-                <div class="col-md-8">
-                    <p>
-                        As an enthusiastic Data Engineer and Analyst holding a Master's degree in Engineering Science (Data Science) from the University at Buffalo, I possess a solid foundation in data science, machine learning, and DevOps. My hands-on experience across diverse industries has equipped me with the skills to build scalable data pipelines and develop robust machine learning models. In previous roles, I successfully managed production servers, automated processes using tools like Jenkins, AWS, and Databricks, and designed innovative solutions to enhance operational efficiency. I am committed to driving actionable insights and supporting data-driven strategies, and I am currently seeking opportunities in Data Engineering, Data Analysis, and Data Science to help organizations make informed decisions and achieve their goals.
-                    </p>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3</p>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <div id="experience" class="background-alt py-5">
-        <div class="container">
-            <h2 class="heading">Experience</h2>
-            <div id="experience-timeline">
-                <div class="vtimeline-content py-3" data-date="Dec 2024">
-                    <h3>University at Buffalo</h3>
-                    <h4>Master's in Data Science</h4>
-                    <p>
-                        I completed courses in Statistical Data Mining I & II, Machine Learning, Data Models and Query Language, and Data Intensive Computing, which provided me with essential skills in data analysis and predictive modeling. Additionally, coursework in Numerical Math, Probability, Data Structures, and visualization tools like Tableau and Power BI further enhanced my analytical capabilities for addressing data-driven challenges.
-                    </p>
-                </div>
-                <div class="vtimeline-content py-3" data-date="Jul 2023">
-                    <h3>Tata Consultancy Services</h3>
-                    <h4>DevOps Engineer</h4>
-                    <ul>
-                        <li>Managed production servers and created development and test environments replicating the production setup to ensure seamless operations.</li>
-                        <li>Provided 24/7 support and participated in daily standup meetings, tracking tasks using Jira as part of an Agile methodology.</li>
-                        <li>Automated routine tasks, including instance resizing, volume resizing, and production data backup, by creating Jenkins pipelines, significantly reducing manual intervention.</li>
-                        <li>Proposed and implemented a cost-saving solution by automating the adjustment of AWS storage classes based on specific requirements.</li>
-                        <li>Developed a Lambda function triggered by AWS EventBridge to automate IP whitelisting in AWS WAF, addressing access issues effectively.</li>
-                        <li>Innovated a Slack-based instance resizing solution to accommodate non-technical users, enabling them to perform tasks via simple Slack commands, thereby simplifying the process and improving efficiency.</li>
-                    </ul>
-                </div>
-                <div class="vtimeline-content py-3" data-date="Jun 2023">
-                    <h3>Fragma Data Systems</h3>
-                    <h4>Data Analyst</h4>
-                    <ul>
-                        <li>Trained in using Azure Data Factory (ADF), Databricks notebooks, and Power BI to enhance proficiency in data  automation, processing, and reporting.</li>
-                        <li>Engineered ETL processes and data warehousing solutions, utilizing Azure Data Factory (ADF) pipelines and Databricks notebooks to automate data ingestion from various sources, including Azure Data Lake Storage (ADLS), SFTP, SharePoint, and Dataverse.</li>
-                        <li>Developed Power BI reports with Row-Level Security (RLS) to ensure data confidentiality and access control.</li>
-                        <li>Authored Databricks notebooks for SQL query execution and automated result dispatch, improving data handling and reporting efficiency.</li>
-                        <li>Managed the onboarding of new datasets, performed comprehensive data testing, and conducted periodic enhancements to the data framework, ensuring continuous improvement.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="education" class="py-5">
-        <div class="container">
-            <h2 class="heading">Education</h2>
-            <div class="education-block py-3">
-                <h3>University at Buffalo</h3>
-                <span class="education-date">2024</span>
-                <h4>Master's in Data Science</h4>
-                <p>Focusing on machine learning and data mining techniques.</p>
-            </div>
-            <div class="education-block py-3">
-                <h3>XYZ University</h3>
-                <span class="education-date">2021</span>
-                <h4>Bachelor's in Electronics and Communication Engineering</h4>
-                <p>Gained foundational knowledge in programming and software development.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="projects" class="background-alt py-5">
-        <div class="container">
-            <h2 class="heading">Projects</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="project shadow-large mb-4">
-                        <div class="project-image">
-                            <img src="images/project1.jpg" class="img-fluid" alt="Project 1" />
-                        </div>
-                        <div class="project-info p-3">
-                            <h3>Real-Time Recommendation System</h3>
-                            <p>Built using Apache Kafka and Spark to process user interactions and provide personalized suggestions.</p>
-                            <a href="#" class="btn btn-primary btn-sm">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="project shadow-large">
-                        <div class="project-image">
-                            <img src="images/project2.jpg" class="img-fluid" alt="Project 2" />
-                        </div>
-                        <div class="project-info p-3">
-                            <h3>NLP Sentiment Analysis</h3>
-                            <p>Developed an end-to-end solution for analyzing user feedback using natural language processing techniques.</p>
-                            <a href="#" class="btn btn-primary btn-sm">View Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="skills" class="py-5">
-        <div class="container text-center">
-            <h2 class="heading">Skills</h2>
-            <ul class="list-inline">
-                <li class="list-inline-item">Python</li>
-                <li class="list-inline-item">R</li>
-                <li class="list-inline-item">Matlab</li>
-                <li class="list-inline-item">JavaScript</li>
-                <li class="list-inline-item">Machine Learning</li>
-                <li class="list-inline-item">Data Analysis</li>
-                <li class="list-inline-item">Data Mining</li>
-                <li class="list-inline-item">SQL</li>
-                <li class="list-inline-item">HTML/CSS</li>
-                <li class="list-inline-item">React</li>
-                <li class="list-inline-item">Node.js</li>
-                <li class="list-inline-item">AWS</li>
-                <li class="list-inline-item">Azure</li>
-                <li class="list-inline-item">Azure Databricks</li>
-                <li class="list-inline-item">Azure Data Factory</li>
-                <li class="list-inline-item">Hadoop</li>
-                <li class="list-inline-item">Spark</li>
-                <li class="list-inline-item">Tableau</li>
-                <li class="list-inline-item">PowerBi</li>
-                <li class="list-inline-item">Jenkins</li>
+        <section id="skills">
+            <h2 class="animate-text">Skills & Achievements</h2>
+            <ul class="animate-text">
+                <li>Programming Languages: Python, Java, Python, JavaScript</li>
+                <li>Web Technologies: HTML5, CSS3, React, Node.js</li>
+                <li>Database: MySQL, MongoDB</li>
+                <li>Tools: Hadoop, Spark, PowerBi, Git, Docker, Jenkins</li>
             </ul>
-        </div>
-    </div>
-
-    <div id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="heading text-center">Get in Touch</h2>
-            <div id="contact-form" class="mx-auto" style="max-width: 600px;">
-                <form method="POST" action="https://formspree.io/your-email@example.com">
-                    <input type="hidden" name="_subject" value="Contact request from personal website" />
-                    <div class="form-group">
-                        <input type="email" class="form-control" name="_replyto" placeholder="Your email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" name="message" placeholder="Your message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Send</button>
-                </form>
+            <div class="achievements">
+                <p class="animate-text">
+                    <span class="highlight">10+</span> Projects Completed
+                </p>
+                <p class="animate-text">
+                    <span class="highlight">500+</span> LeetCode Problems Solved
+                </p>
+                <p class="animate-text">
+                    <span class="highlight">5</span> Hackathons Won
+                </p>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <footer class="py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>Copyright &copy; <span id="current-year">2024</span> Gana Syam Reddy Mandepudi</p>
-                </div>
-                <div class="col-sm-2 top text-center">
-                    <span id="to-top" class="d-block">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social text-right">
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="https://github.com/syam888" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.linkedin.com/in/syam-reddy/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
+        <section id="contact">
+            <h2 class="animate-text">Get In Touch</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/syam-reddy" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/syam888" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://leetcode.com/syamreddy888" target="_blank"><i class="fas fa-code"></i></a>
+                <a href="https://www.instagram.com/syamreddy.45" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
-        </div>
+            <a href="path/to/your-resume.pdf" download class="resume-btn">Download Resume</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gana Syam Reddy Mandepudi. All rights reserved.</p>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
