@@ -1,146 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Syam Reddy - Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-</head>
-
 <body>
-  <!-- Header Section -->
-  <header class="header">
-    <nav class="navbar">
-      <div class="logo">Syam Reddy</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <div class="hero-image">
-        <img src="assets/myphoto.jpg" alt="Syam Reddy">
-      </div>
-      <div class="hero-text">
-        <h1>Hello, I'm <span class="highlight">Syam Reddy</span></h1>
-        <p>A Software Development Engineer passionate about innovation and technology.</p>
-        <a href="assets/resume.pdf" download class="button">Download Resume</a>
-      </div>
+  <div class="split-layout">
+    <!-- Left Fixed Section -->
+    <div class="left-fixed">
+      <img src="images/my_image.JPG" alt="Syam Reddy" class="profile-image">
+      <h2>Syam Reddy</h2>
+      <p>Software Engineer</p>
     </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I am a dedicated software engineer and data enthusiast with a passion for developing innovative solutions that drive business success. With a strong background in software development, data science, and cloud technologies, I aim to deliver impactful and scalable projects.</p>
-  </section>
+    <!-- Right Scrolling Section -->
+    <div class="right-scrolling">
+      <!-- Header Section -->
+      <header class="header">
+        <nav class="navbar">
+          <div class="logo">Syam Reddy</div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-  <!-- Education Section -->
-  <section id="education" class="section section-alt">
-    <h2>Education</h2>
-    <div class="education-item">
-      <h3>University at Buffalo, The State University of New York</h3>
-      <p>Master of Science in Data Science (GPA: 3.75/4.0)</p>
-      <p>Aug 2023 – Dec 2024</p>
+      <!-- Hero Section -->
+      <section id="hero" class="hero">
+        <div class="hero-text">
+          <h1>Hello, I'm <span class="highlight">Syam Reddy</span></h1>
+          <p>A Software Development Engineer passionate about innovation and technology.</p>
+          <a href="images/Gana_Syam_Reddy.pdf" download class="button">Download Resume</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I am a dedicated software engineer and data enthusiast with a passion for developing innovative solutions that drive business success. With a strong background in software development, data science, and cloud technologies, I aim to deliver impactful and scalable projects.</p>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="section section-alt">
+        <h2>Education</h2>
+        <div class="education-item">
+          <h3>University at Buffalo, The State University of New York</h3>
+          <p>Master of Science in Data Science (GPA: 3.75/4.0)</p>
+          <p>Aug 2023 – Dec 2024</p>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">Programming Languages: C, C++, Java, Python</div>
+          <div class="skill-card">Web Technologies: React.js, Node.js</div>
+          <div class="skill-card">Cloud: AWS, Azure</div>
+          <div class="skill-card">Tools: Docker, Jenkins, Tableau</div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="section section-alt">
+        <h2>Work Experience</h2>
+        <div class="experience-item">
+          <h3>Tata Consultancy Services (TCS)</h3>
+          <p>Software Development Engineer | Jul 2021 - Jul 2023</p>
+          <ul>
+            <li>Automated inventory updates with AWS Lambda, improving efficiency by 30%.</li>
+            <li>Developed ML-powered recommendation algorithms for an e-commerce platform.</li>
+            <li>Improved page load speeds by 35% with caching mechanisms.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Bank Customer Churn Prediction</h3>
+            <p>Machine Learning models with 83% accuracy.</p>
+          </div>
+          <div class="project-card">
+            <h3>Retail Data Management System</h3>
+            <p>Real-time insights into sales and inventory.</p>
+          </div>
+          <div class="project-card">
+            <h3>Real-Time To-Do App</h3>
+            <p>Scalable app using React.js and Azure.</p>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
+  </div>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">Programming Languages: C, C++, Java, Python</div>
-      <div class="skill-card">Web Technologies: React.js, Node.js</div>
-      <div class="skill-card">Cloud: AWS, Azure</div>
-      <div class="skill-card">Tools: Docker, Jenkins, Tableau</div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="section section-alt">
-    <h2>Work Experience</h2>
-    <div class="experience-item">
-      <h3>Tata Consultancy Services (TCS)</h3>
-      <p>Software Development Engineer | Jul 2021 - Jul 2023</p>
-      <ul>
-        <li>Automated inventory updates with AWS Lambda, improving efficiency by 30%.</li>
-        <li>Developed ML-powered recommendation algorithms for an e-commerce platform.</li>
-        <li>Improved page load speeds by 35% with caching mechanisms.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Bank Customer Churn Prediction</h3>
-        <p>Machine Learning models with 83% accuracy.</p>
-      </div>
-      <div class="project-card">
-        <h3>Retail Data Management System</h3>
-        <p>Real-time insights into sales and inventory.</p>
-      </div>
-      <div class="project-card">
-        <h3>Real-Time To-Do App</h3>
-        <p>Scalable app using React.js and Azure.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section section-alt">
-    <h2>Contact</h2>
-    <ul class="contact-list">
-      <li><a href="https://www.linkedin.com/in/syam-reddy/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-      <li><a href="https://github.com/syam888" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-      <li><a href="https://leetcode.com/u/syamreddy888/" target="_blank"><i class="fas fa-code"></i> LeetCode</a></li>
-      <li><a href="https://instagram.com/syamreddy.45/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-    </ul>
-  </section>
-
-  <!-- Let's Work Together Section -->
-  <section id="work-together" class="section dark-section">
-  <h2 class="form-title">Let's Work <span class="highlight">Together</span></h2>
-  <form class="work-form">
-    <div class="form-row">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your Name" />
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Your@email.com" />
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="message">Message</label>
-      <textarea id="message" rows="4" placeholder="Message"></textarea>
-    </div>
-    <button type="submit" class="button">Submit</button>
-  </form>
-</section>
-
-
+  <!-- Footer -->
   <footer class="footer">
     <p>&copy; 2025 Syam Reddy. All Rights Reserved.</p>
   </footer>
 
   <script src="js/scripts.js"></script>
 </body>
-
-</html>
