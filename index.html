@@ -9,11 +9,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- Header Section -->
-  <header>
+  <header class="header">
     <nav class="navbar">
       <div class="logo">Syam Reddy</div>
       <ul class="nav-links">
@@ -30,10 +31,14 @@
   <!-- Hero Section -->
   <section id="hero" class="hero">
     <div class="hero-content">
-      <img src="images/my_photo.jpg" alt="Syam Reddy" class="profile-image">
-      <h1>Hello, I'm Gana Syam Reddy</h1>
-      <p>Software Development Engineer | Data Enthusiast</p>
-      <a href="images/Gana_Syam_Reddy.pdf" download class="button">Download Resume</a>
+      <div class="hero-image">
+        <img src="assets/myphoto.jpg" alt="Syam Reddy">
+      </div>
+      <div class="hero-text">
+        <h1>Hello, I'm <span class="highlight">Syam Reddy</span></h1>
+        <p>A Software Development Engineer passionate about innovation and technology.</p>
+        <a href="assets/resume.pdf" download class="button">Download Resume</a>
+      </div>
     </div>
   </section>
 
@@ -44,7 +49,7 @@
   </section>
 
   <!-- Education Section -->
-  <section id="education" class="section">
+  <section id="education" class="section section-alt">
     <h2>Education</h2>
     <div class="education-item">
       <h3>University at Buffalo, The State University of New York</h3>
@@ -56,16 +61,16 @@
   <!-- Skills Section -->
   <section id="skills" class="section">
     <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>Programming Languages: C, C++, C#, Java, Python, R, SQL</li>
-      <li>Web Technologies: HTML, CSS, JavaScript, React.js, Node.js</li>
-      <li>Cloud: AWS, Azure</li>
-      <li>Tools: Docker, Jenkins, Tableau, Power BI</li>
-    </ul>
+    <div class="skills-grid">
+      <div class="skill-card">Programming Languages: C, C++, Java, Python</div>
+      <div class="skill-card">Web Technologies: React.js, Node.js</div>
+      <div class="skill-card">Cloud: AWS, Azure</div>
+      <div class="skill-card">Tools: Docker, Jenkins, Tableau</div>
+    </div>
   </section>
 
-  <!-- Work Experience Section -->
-  <section id="experience" class="section">
+  <!-- Experience Section -->
+  <section id="experience" class="section section-alt">
     <h2>Work Experience</h2>
     <div class="experience-item">
       <h3>Tata Consultancy Services (TCS)</h3>
@@ -81,22 +86,60 @@
   <!-- Projects Section -->
   <section id="projects" class="section">
     <h2>Projects</h2>
-    <ul class="projects-list">
-      <li><strong>Bank Customer Churn Prediction:</strong> Machine Learning models with 83% accuracy.</li>
-      <li><strong>Retail Data Management System:</strong> Real-time insights into sales and inventory.</li>
-      <li><strong>Real-Time To-Do App:</strong> Scalable app using React.js and Azure.</li>
-    </ul>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Bank Customer Churn Prediction</h3>
+        <p>Machine Learning models with 83% accuracy.</p>
+      </div>
+      <div class="project-card">
+        <h3>Retail Data Management System</h3>
+        <p>Real-time insights into sales and inventory.</p>
+      </div>
+      <div class="project-card">
+        <h3>Real-Time To-Do App</h3>
+        <p>Scalable app using React.js and Azure.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section">
+  <section id="contact" class="section section-alt">
     <h2>Contact</h2>
     <ul class="contact-list">
-      <li><a href="https://www.linkedin.com/in/syam-reddy/" target="_blank">LinkedIn</a></li>
-      <li><a href="https://github.com/syam888" target="_blank">GitHub</a></li>
-      <li><a href="https://leetcode.com/u/syamreddy888/" target="_blank">LeetCode</a></li>
-      <li><a href="https://instagram.com/syamreddy.45/" target="_blank">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/in/syam-reddy/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      <li><a href="https://github.com/syam888" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+      <li><a href="https://leetcode.com/u/syamreddy888/" target="_blank"><i class="fas fa-code"></i> LeetCode</a></li>
+      <li><a href="https://instagram.com/syamreddy.45/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
     </ul>
+  </section>
+
+  <!-- Let's Work Together Section -->
+  <section id="work-together" class="section">
+    <h2>Let's Work Together</h2>
+    <form class="work-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your@email.com" />
+      </div>
+      <div class="form-group">
+        <label for="budget">Budget</label>
+        <select id="budget">
+          <option>Select...</option>
+          <option value="<500">Below $500</option>
+          <option value="500-1000">$500 - $1000</option>
+          <option value=">1000">Above $1000</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Message"></textarea>
+      </div>
+      <button type="submit" class="button">Submit</button>
+    </form>
   </section>
 
   <footer class="footer">
