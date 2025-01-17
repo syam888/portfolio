@@ -1,4 +1,49 @@
 /* General Styles */
+/* Split Layout */
+.split-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Left Fixed Section */
+.left-fixed {
+  width: 40%;
+  background-color: #121212;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.left-fixed img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.left-fixed h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.left-fixed p {
+  font-size: 1rem;
+}
+
+/* Right Scrolling Section */
+.right-scrolling {
+  width: 60%;
+  overflow-y: auto;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 2rem;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
