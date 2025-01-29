@@ -1,15 +1,15 @@
 /* General Styles */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Merriweather', serif;
   margin: 0;
   padding: 0;
   color: #333;
   line-height: 1.6;
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  background: #f9f9f9;
 }
 
 h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
 
@@ -21,7 +21,7 @@ h1, h2, h3 {
 
 /* Header */
 header {
-  background: linear-gradient(135deg, #0A2647, #144272);
+  background: #2c3e50;
   color: #fff;
   padding: 150px 0;
   text-align: center;
@@ -37,7 +37,7 @@ header h1 {
   margin-bottom: 20px;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid #FF6B35;
+  border-right: 2px solid #e74c3c;
   animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
   display: inline-block;
 }
@@ -49,11 +49,11 @@ header h1 {
 
 @keyframes blink-caret {
   from, to { border-color: transparent; }
-  50% { border-color: #FF6B35; }
+  50% { border-color: #e74c3c; }
 }
 
 .contact-info a {
-  color: #FF6B35;
+  color: #e74c3c;
   text-decoration: none;
 }
 
@@ -65,39 +65,22 @@ header h1 {
 }
 
 .social-links a:hover {
-  color: #FF6B35;
+  color: #e74c3c;
 }
 
 .cta-button {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background: #FF6B35;
+  background: #e74c3c;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s;
-}
-
-.cta-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  transition: left 0.5s;
-}
-
-.cta-button:hover::before {
-  left: 100%;
+  transition: background 0.3s;
 }
 
 .cta-button:hover {
-  transform: scale(1.1);
+  background: #c0392b;
 }
 
 /* About Me */
@@ -123,7 +106,7 @@ header h1 {
 
 /* Experience */
 #experience {
-  background: #f5f7fa;
+  background: #f9f9f9;
   padding: 80px 0;
 }
 
@@ -159,7 +142,7 @@ header h1 {
   display: inline-block;
   margin: 10px 5px 0 0;
   padding: 8px 16px;
-  background: #FF6B35;
+  background: #e74c3c;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -167,12 +150,12 @@ header h1 {
 }
 
 .project-button:hover {
-  background: #144272;
+  background: #c0392b;
 }
 
 /* Contact */
 #contact {
-  background: linear-gradient(135deg, #0A2647, #144272);
+  background: #2c3e50;
   color: #fff;
   padding: 80px 0;
 }
@@ -181,7 +164,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -193,7 +176,7 @@ header h1 {
 }
 
 .submit-button {
-  background: #FF6B35;
+  background: #e74c3c;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -203,12 +186,12 @@ header h1 {
 }
 
 .submit-button:hover {
-  background: #0A2647;
+  background: #c0392b;
 }
 
 /* Footer */
 footer {
-  background: #0A2647;
+  background: #2c3e50;
   color: #fff;
   text-align: center;
   padding: 20px 0;
