@@ -1,108 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gana Syam Reddy</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Gana Syam Reddy Mandepudi - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <!-- Header Section -->
   <header>
-    <nav class="navbar">
-      <div class="logo">Syam Reddy</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Gana Syam Reddy Mandepudi</h1>
+      <p>Data Scientist | Software Engineer | Cloud Enthusiast</p>
+      <div class="contact-info">
+        <p>+1 (716) 538-9352 | <a href="mailto:ganasyam@buffalo.edu">ganasyam@buffalo.edu</a></p>
+      </div>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/your-linkedin" target="_blank"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://github.com/your-github" target="_blank"><img src="assets/icons/github.svg" alt="GitHub"></a>
+        <a href="https://leetcode.com/your-leetcode" target="_blank"><img src="assets/icons/leetcode.svg" alt="LeetCode"></a>
+      </div>
+      <a href="#projects" class="cta-button">View My Work</a>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <h1>Hello, I'm Syam Reddy</h1>
-      <p>Software Development Engineer | Data Enthusiast</p>
-      <a href="/resume.pdf" download class="button">Download Resume</a>
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="assets/images/profile.jpg" alt="Gana Syam Reddy Mandepudi">
+        <div class="bio">
+          <p>Hi, I'm Gana! I'm a Data Science graduate student at the University at Buffalo with a passion for building scalable systems, leveraging machine learning, and solving complex problems. Welcome to my portfolio!</p>
+          <h3>Skills</h3>
+          <ul>
+            <li><strong>Programming Languages:</strong> Python, Java, JavaScript, SQL, C++</li>
+            <li><strong>Cloud Platforms:</strong> AWS, GCP, Azure</li>
+            <li><strong>Tools & Frameworks:</strong> React, Node.js, Docker, Kubernetes, Tableau, Power BI</li>
+          </ul>
+          <h3>Certifications</h3>
+          <ul>
+            <li>AWS Certified Cloud Practitioner</li>
+            <li>Microsoft Certified Azure Fundamentals</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I am a dedicated software engineer and data enthusiast with a passion for developing innovative solutions that drive business success. With a strong background in software development, data science, and cloud technologies, I aim to deliver impactful and scalable projects.</p>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" class="section">
-    <h2>Education</h2>
-    <div class="education-item">
-      <h3>University at Buffalo, The State University of New York</h3>
-      <p>Master of Science in Data Science (GPA: 3.75/4.0)</p>
-      <p>Aug 2023 – Dec 2024</p>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>Programming Languages: C, C++, C#, Java, Python, R, SQL</li>
-      <li>Web Technologies: HTML, CSS, JavaScript, React.js, Node.js</li>
-      <li>Cloud: AWS, Azure</li>
-      <li>Tools: Docker, Jenkins, Tableau, Power BI</li>
-    </ul>
-  </section>
-
-  <!-- Work Experience Section -->
-  <section id="experience" class="section">
-    <h2>Work Experience</h2>
-    <div class="experience-item">
-      <h3>Tata Consultancy Services (TCS)</h3>
-      <p>Software Development Engineer | Jul 2021 - Jul 2023</p>
-      <ul>
-        <li>Automated inventory updates with AWS Lambda, improving efficiency by 30%.</li>
-        <li>Developed ML-powered recommendation algorithms for an e-commerce platform.</li>
-        <li>Improved page load speeds by 35% with caching mechanisms.</li>
-      </ul>
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2>Work Experience</h2>
+      <div class="experience-item">
+        <h3>Tata Consultancy Services (TCS) – Software Engineer</h3>
+        <p><em>Jul 2021 - Jul 2023</em></p>
+        <ul>
+          <li>Engineered AWS Lambda functions integrated with DynamoDB and API Gateway, reducing manual intervention by 30%.</li>
+          <li>Built RESTful APIs, reducing order processing time by 25%.</li>
+          <li>Integrated ML recommendation algorithms, improving product search accuracy by 20%.</li>
+          <li>Implemented caching mechanisms with AWS ElastiCache, improving page load speeds by 35%.</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3>Pankuri & Co. – Software Engineer Intern</h3>
+        <p><em>Jan 2021 - Jun 2021</em></p>
+        <ul>
+          <li>Delivered REST APIs supporting 1,000+ concurrent users with 95% uptime.</li>
+          <li>Enhanced user-facing components, increasing engagement by 25%.</li>
+          <li>Optimized SQL queries, reducing execution time by 40%.</li>
+          <li>Automated CI/CD pipelines, reducing release cycles by 30%.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <ul class="projects-list">
-      <li><strong>Bank Customer Churn Prediction:</strong> Machine Learning models with 83% accuracy.</li>
-      <li><strong>Retail Data Management System:</strong> Real-time insights into sales and inventory.</li>
-      <li><strong>Real-Time To-Do App:</strong> Scalable app using React.js and Azure.</li>
-    </ul>
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Bank Customer Churn Prediction</h3>
+          <p>Developed a machine learning system achieving 83.14% accuracy for predicting customer churn. Deployed a web application for real-time risk assessments.</p>
+          <p><strong>Tech Stack:</strong> Python, SMOTE, Machine Learning</p>
+          <a href="https://github.com/your-github/bank-churn" target="_blank">GitHub</a> | <a href="#" target="_blank">Live Demo</a>
+        </div>
+        <div class="project-card">
+          <h3>Retail Data Management System</h3>
+          <p>Designed a normalized relational database in PostgreSQL, improving query performance by 50%. Integrated visual analytics for sales and inventory monitoring.</p>
+          <p><strong>Tech Stack:</strong> SQL, PostgreSQL, Database Normalization</p>
+          <a href="https://github.com/your-github/retail-data" target="_blank">GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Real-Time To-Do Web Application</h3>
+          <p>Built a scalable to-do app with React.js and Node.js, achieving server response times under 200ms.</p>
+          <p><strong>Tech Stack:</strong> React.js, Node.js, MongoDB, Azure</p>
+          <a href="https://github.com/your-github/todo-app" target="_blank">GitHub</a> | <a href="#" target="_blank">Live Demo</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <ul class="contact-list">
-      <li><a href="https://www.linkedin.com/in/syam-reddy/" target="_blank">LinkedIn</a></li>
-      <li><a href="https://github.com/syam888" target="_blank">GitHub</a></li>
-      <li><a href="https://leetcode.com/u/syamreddy888/" target="_blank">LeetCode</a></li>
-      <li><a href="https://instagram.com/syamreddy.45/" target="_blank">Instagram</a></li>
-    </ul>
+  <section id="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="subject" placeholder="Subject" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:ganasyam@buffalo.edu">ganasyam@buffalo.edu</a></p>
+        <p>Phone: +1 (716) 538-9352</p>
+      </div>
+    </div>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 Syam Reddy. All Rights Reserved.</p>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Gana Syam Reddy Mandepudi. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/your-linkedin" target="_blank"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://github.com/your-github" target="_blank"><img src="assets/icons/github.svg" alt="GitHub"></a>
+        <a href="https://leetcode.com/your-leetcode" target="_blank"><img src="assets/icons/leetcode.svg" alt="LeetCode"></a>
+      </div>
+    </div>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
