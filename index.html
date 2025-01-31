@@ -5,25 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gana Syam Reddy Mandepudi - Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <!-- Header Section -->
   <header>
     <div class="container">
-      <h1>Gana Syam Reddy Mandepudi</h1>
-      <p class="tagline">Data Scientist | Software Engineer | Cloud Enthusiast</p>
-      <div class="contact-info">
-        <p>+1 (716) 538-9352 | <a href="mailto:ganasyam@buffalo.edu">ganasyam@buffalo.edu</a></p>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>Gana Syam Reddy Mandepudi</h1>
+        <p class="tagline">Data Scientist | Software Engineer | Cloud Enthusiast</p>
+        <a href="#portfolio" class="cta-button">Explore Now</a>
       </div>
-      <div class="social-links">
-        <a href="https://linkedin.com/in/syam-reddy" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/syam888" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://leetcode.com/u/syamreddy888/" target="_blank"><i class="fas fa-code"></i></a>
-        <a href="https://instagram.com/syamreddy.45" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
-      <a href="#projects" class="cta-button">View My Work</a>
     </div>
   </header>
 
@@ -46,57 +47,28 @@
     </div>
   </section>
 
-  <!-- Experience Section -->
-  <section id="experience">
+  <!-- Portfolio Section -->
+  <section id="portfolio">
     <div class="container">
-      <h2>Work Experience</h2>
-      <div class="experience-item">
-        <h3>Tata Consultancy Services (TCS) – Software Engineer</h3>
-        <p><em>Jul 2021 - Jul 2023</em></p>
-        <ul>
-          <li>Engineered AWS Lambda functions integrated with DynamoDB and API Gateway, reducing manual intervention by 30%.</li>
-          <li>Built RESTful APIs, reducing order processing time by 25%.</li>
-          <li>Integrated ML recommendation algorithms, improving product search accuracy by 20%.</li>
-          <li>Implemented caching mechanisms with AWS ElastiCache, improving page load speeds by 35%.</li>
-        </ul>
-      </div>
-      <div class="experience-item">
-        <h3>Pankuri & Co. – Software Engineer Intern</h3>
-        <p><em>Jan 2021 - Jun 2021</em></p>
-        <ul>
-          <li>Delivered REST APIs supporting 1,000+ concurrent users with 95% uptime.</li>
-          <li>Enhanced user-facing components, increasing engagement by 25%.</li>
-          <li>Optimized SQL queries, reducing execution time by 40%.</li>
-          <li>Automated CI/CD pipelines, reducing release cycles by 30%.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
+      <h2>My Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="assets/images/project1.jpg" alt="Project 1">
           <h3>Bank Customer Churn Prediction</h3>
-          <p>Developed a machine learning system achieving 83.14% accuracy for predicting customer churn. Deployed a web application for real-time risk assessments.</p>
-          <p><strong>Tech Stack:</strong> Python, SMOTE, Machine Learning</p>
+          <p>Developed a machine learning system achieving 83.14% accuracy for predicting customer churn.</p>
           <a href="https://github.com/syam888/bank-churn" target="_blank" class="project-button">GitHub</a>
-          <a href="#" target="_blank" class="project-button">Live Demo</a>
         </div>
-        <div class="project-card">
+        <div class="portfolio-item">
+          <img src="assets/images/project2.jpg" alt="Project 2">
           <h3>Retail Data Management System</h3>
-          <p>Designed a normalized relational database in PostgreSQL, improving query performance by 50%. Integrated visual analytics for sales and inventory monitoring.</p>
-          <p><strong>Tech Stack:</strong> SQL, PostgreSQL, Database Normalization</p>
+          <p>Designed a normalized relational database in PostgreSQL, improving query performance by 50%.</p>
           <a href="https://github.com/syam888/retail-data" target="_blank" class="project-button">GitHub</a>
         </div>
-        <div class="project-card">
+        <div class="portfolio-item">
+          <img src="assets/images/project3.jpg" alt="Project 3">
           <h3>Real-Time To-Do Web Application</h3>
           <p>Built a scalable to-do app with React.js and Node.js, achieving server response times under 200ms.</p>
-          <p><strong>Tech Stack:</strong> React.js, Node.js, MongoDB, Azure</p>
           <a href="https://github.com/syam888/todo-app" target="_blank" class="project-button">GitHub</a>
-          <a href="#" target="_blank" class="project-button">Live Demo</a>
         </div>
       </div>
     </div>
@@ -105,7 +77,7 @@
   <!-- Contact Section -->
   <section id="contact">
     <div class="container">
-      <h2>Get in Touch</h2>
+      <h2>Contact</h2>
       <div class="contact-info">
         <p>Email: <a href="mailto:ganasyam@buffalo.edu">ganasyam@buffalo.edu</a></p>
         <p>Phone: +1 (716) 538-9352</p>
@@ -117,12 +89,6 @@
         <textarea id="message" placeholder="Your Message" required></textarea>
         <button type="submit" class="submit-button">Send Message</button>
       </form>
-      <div class="social-links">
-        <a href="https://linkedin.com/in/syam-reddy" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/syam888" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://leetcode.com/u/syamreddy888/" target="_blank"><i class="fas fa-code"></i></a>
-        <a href="https://instagram.com/syamreddy.45" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
     </div>
   </section>
 
@@ -130,6 +96,12 @@
   <footer>
     <div class="container">
       <p>&copy; 2024 Gana Syam Reddy Mandepudi. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/syam-reddy" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/syam888" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://leetcode.com/u/syamreddy888/" target="_blank"><i class="fas fa-code"></i></a>
+        <a href="https://instagram.com/syamreddy.45" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
   </footer>
 
