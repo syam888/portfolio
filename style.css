@@ -74,19 +74,7 @@ nav ul li a {
 }
 
 .about-content {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.about-content img {
-  width: 200px;
-  border-radius: 50%;
-  border: 2px solid #2c3e50;
-}
-
-.bio {
-  flex: 1;
+  text-align: center;
 }
 
 /* Portfolio */
@@ -111,11 +99,6 @@ nav ul li a {
 
 .portfolio-item:hover {
   transform: translateY(-10px);
-}
-
-.portfolio-item img {
-  width: 100%;
-  border-radius: 10px;
 }
 
 .project-button {
